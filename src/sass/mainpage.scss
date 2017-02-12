@@ -1,0 +1,27 @@
+// banner
+.banner{
+	min-height: 660px;
+	background: url('/front/img/banner.jpg');
+}
+
+// discount
+.discount{
+	background-color: $blue;
+
+	h3{
+		margin: 0;
+		font-size: 36px;
+		line-height: 42px;
+		font-weight: 500;
+		color: $white;
+	}
+}
+
+// feedback
+.feedback{}
+
+// lostfound
+.lostfound{}
+
+//service
+.service{}

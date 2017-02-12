@@ -1214,6 +1214,27 @@ p {
     width: 20%;
     float: left; } }
 
+h1, h2 {
+  margin: 0; }
+
+h1 {
+  font-size: 58px;
+  line-height: 68px;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #063134;
+  font-weight: 900;
+  text-align: center; }
+  @media (max-width: 767px) {
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px; } }
+
 /* clearfix */
 .clearfix:after {
   visibility: hidden;
@@ -1267,62 +1288,45 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-family: "Open Sans", sans-serif; }
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  font-family: "Roboto", sans-serif; }
 
-#header {
+#header,
+#footer {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto; }
+      -ms-flex: none;
+          flex: none; }
 
 #wrapper {
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto; }
-
-#footer {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto; }
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 100%; }
 
 /* slick */
 .slick-slide:focus {
   outline: 0; }
 
-/* page */
-._page {
-  padding-bottom: 100px; }
-  ._page h1 {
-    color: #323232;
-    margin-bottom: 50px; }
-    @media (max-width: 767px) {
-      ._page h1 {
-        margin: 15px 0; } }
-  @media (max-width: 767px) {
-    ._page {
-      padding-bottom: 50px; } }
+.btn {
+  background: #57c53d; }
 
-/* bg like a line */
-.line_bg {
-  width: 100%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.5);
-  position: relative; }
-  .line_bg:after {
-    content: '';
-    display: block;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #8fc73e;
-    top: -3px;
-    position: absolute;
-    z-index: 999; }
-  .line_bg.left:after {
-    left: 0; }
-  .line_bg.right:after {
-    right: 0; }
+#header {
+  background: #091801; }
+
+.banner {
+  min-height: 660px;
+  background: url("/front/img/banner.jpg"); }
+
+.discount {
+  background-color: #295f90; }
+  .discount h3 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 500;
+    color: #ffffff; }
 @font-face {
   font-family: 'icomoon';
   src: url("/front/fonts/icomoon.eot?pqij74");
