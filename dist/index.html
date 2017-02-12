@@ -50,7 +50,7 @@
       </div>
 
       <div class="user_image">
-        <img src="http://placehold.it/44x44" alt="user image">
+        <img src="./front/img/test_img.jpg" alt="user image">
       </div>
 
     </div>
@@ -65,7 +65,7 @@
     <!-- Banner -->
     <div class="banner">
       <div class="container">
-        <div class="row">
+        <div class="row banner_flex">
 
           <!-- left side -->
           <div class="col-md-6 left">
@@ -143,6 +143,49 @@
           <br> 
           who will treat your pet like family
         </h2>
+
+        <div class="slick_carousel">
+          <div class="item">
+            <div class="top">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis est inventore, pariatur repellat, ad esse obcaecati vero, possimus assumenda iure amet cumque blanditiis autem. Quas laboriosam incidunt libero sed officiis.
+            </div>
+            <div class="bottom clearfix">
+              <img src="./front/img/test_img.jpg" alt="feedback avatar" class="pull-left">
+              <div class="pull-left">
+                <div class="name">Username</div>
+                <div class="date">feb 2017</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="top">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </div>
+            <div class="bottom clearfix">
+              <img src="./front/img/test_img.jpg" alt="feedback avatar" class="pull-left">
+              <div class="pull-left">
+                <div class="name">Username</div>
+                <div class="date">feb 2017</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="top">
+              Lorem ipsum dolor
+            </div>
+            <div class="bottom clearfix">
+              <img src="./front/img/test_img.jpg" alt="feedback avatar" class="pull-left">
+              <div class="pull-left">
+                <div class="name">Username</div>
+                <div class="date">feb 2017</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">4</div>
+          <div class="item">5</div>
+        </div>
+
+        <div class="arrow_nav"></div>
       </div>
     </div>
 
@@ -454,16 +497,61 @@
             <div class="pull-left">
               All rights reserved DOGGYBB copyright 2016
             </div>
-            <div class="pull-right">
+            <div class="pull-right links">
               <a href="javascript:void(0);">COOKIES</a>
+              |
               <a href="javascript:void(0);">Terms of use</a>
-              <a href="javascript:void(0);">ENGLISH</a>
+              |
+              <a href="javascript:void(0);">
+                <i class="flaticon-internet"></i>
+                ENGLISH
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    $(document).ready(function(){
+      $('.slick_carousel').slick({
+        appendDots: $('.arrow_nav'),
+        cssEase: 'ease-out',
+        autoplay: false,
+        arrows: false,
+        dots: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
 
 </body>
 </html>
