@@ -1,0 +1,97 @@
+#footer{
+	background: $darkgreen;
+	color: $white;
+	padding: 65px 0 50px;
+
+	.title{
+		font: {
+			size: 18px;
+			weight: 700;
+		}
+		line-height: 18px;
+		color: $green;
+		text-transform: uppercase;
+
+		padding-bottom: 12px;
+		border-bottom: 1px solid #25311e;
+		margin-bottom: 6px;
+
+		&.no_underline{
+			padding-bottom: 0;
+			border-bottom: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	.text{
+		font-size: 14px;
+		line-height: 34px;
+		text-transform: uppercase;
+	}
+	
+	.logo{
+		float: left;
+	}
+	.socials{
+		float: right;
+		a{
+			display: inline-block;
+			width: 36px;
+			height: 36px;
+			line-height: 36px;
+			border: 2px solid #255617;
+			border-radius: 50%;
+			text-align: center;
+			color: $green;
+
+			@include transition(.25s ease-in-out);
+
+			&:hover{
+				border-color: $green;
+			}
+			i{
+				color: $green;
+			}
+		}
+	}
+
+	.divider{
+		@extend .clearfix;
+
+		width: calc(100% - 30px);
+		margin: 15px;
+		height: 1px;
+
+		background: #25311e;
+	}
+
+	form{
+		margin-top: 30px;
+		display: flex;
+		// align-items: stretch;
+
+		input[type="text"],
+		input[type="email"]{
+			border: 0;
+			outline: 0;
+			height: 45px;
+			line-height: 45px;
+			font-size: 16px;
+			color: #727272;
+			padding-left: 15px;
+			border-radius: 2px;
+			display: inline-block;
+		}
+		input[type="email"]{
+			margin: 0 10px;
+		}
+
+		.btn{
+			width: 100%;
+		}
+	}
+
+	.bottom{
+		margin-top: 50px;
+	}
+}

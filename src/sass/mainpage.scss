@@ -81,6 +81,7 @@
 	.btn{
 		width: 100%;
 		margin-bottom: 15px;
+		text-align: left;
 	}
 }
 
@@ -202,13 +203,75 @@
 			height: 24px;
 			border: 1px solid #bebebe;
 			border-radius: 50%;
+			position: relative;
+			&:after{
+				opacity: 0;
+				visibility: hidden;
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -3px;
+				margin-top: -3px;
+				z-index: 2;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: $green;
+				box-shadow: 0 0 2px 0 $green;
+
+				@include transition(.25s, ease-in-out);
+			}
 		}
 
 		&:hover{
+			color: rgba($green, .7);
+			i:after{
+				opacity: .7;
+				visibility: visible;
+			}
+		}
+		
+		&.active{ 
 			color: $green;
+			i:after{
+				opacity: 1;
+				visibility: visible;
+			}
 		}
 	}
 }
 
 //service
-.service{}
+.service{
+	color: $white;
+	padding-bottom: 70px;
+	.title{
+		margin-bottom: 15px;
+
+		font-size: 22px;
+		line-height: 22px;
+		text-transform: uppercase;
+	}
+	.text{
+		font-size: 18px;
+		line-height: 26px;
+
+		max-height: 52px;
+		overflow: hidden;
+	}
+	.col-sm-4{
+		background: $green;
+		padding: 25px 20px;
+	}
+	.clearfix:nth-child(even){
+		.col-sm-4:nth-child(odd){
+			background:#48b030;
+		}
+	}
+	.clearfix:nth-child(odd){
+		.col-sm-4:nth-child(even){
+			background:#48b030;
+		}
+	}
+}
