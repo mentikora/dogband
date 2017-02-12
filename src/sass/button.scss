@@ -1,0 +1,53 @@
+.btn{
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: $white;
+	display: inline-block;
+	text-align: center;
+
+	font-size: 16px;
+	
+	@include transition(.25s, ease-in-out);
+
+	&.lg{
+		height: 49px;
+		line-height: 49px;
+	}
+	&.sm{
+		height: 45px;
+		line-height: 45px;
+	}
+	&.bordered{
+		border-radius: 2px;
+	}
+	&.green{
+		background: $green;
+		&:hover{
+			background: darken($green, 10%);
+		}
+	}
+	&.banner_btn{
+		width: 245px;
+		border: 1px solid $green;
+		background: rgba(0,0,0, .1);
+		&:hover{
+			background: $green;
+		}
+	}
+
+	// socials
+	&.fb{
+		background: #3c66c4;
+	}
+	&.vk{
+		background: #44678d;
+	}
+	&.gp{
+		background: #cf4332;
+	}
+	&.tw{
+		background: #33ccff;
+	}
+}

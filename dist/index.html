@@ -8,32 +8,461 @@
   <link rel="stylesheet" href="style.css">
   
   <!-- add font -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
   <!-- js -->
   <!-- http://kenwheeler.github.io/slick/ -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-  <script src="/front/js/main.js"></script>
+  <!-- <script src="/front/js/main.js"></script> -->
 </head>
 <body>
   
   <!-- 
-    Header
+    HEADER
     ======
    -->
   <header id="header">
-    header
+    <div class="container">
+      <a href="javascript:void(0);" class="logo">
+        <img src="./front/img/logo.png" alt="logo">
+      </a>
+
+      <!-- header nav -->
+      <nav>
+        <ul id="navigation">
+          <li>
+            <a href="javascript:void(0);">something1</a>
+            <ul>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+              <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0);">something2</a></li>
+          <li><a href="javascript:void(0);">something3</a></li>
+          <li><a href="javascript:void(0);">something4</a></li>
+        </ul>
+      </nav>
+
+      <div class="search">
+        <i class="flaticon-search"></i>
+      </div>
+
+      <div class="user_image">
+        <img src="http://placehold.it/44x44" alt="user image">
+      </div>
+
+    </div>
   </header>
   
-  <!-- wrapper content -->
+  <!-- 
+    WRAPPER CONTENT
+    ===============
+  -->
   <main id="wrapper">
-    content
+
+    <!-- Banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+
+          <!-- left side -->
+          <div class="col-md-6 left">
+            <h1>
+              Find the perfect pet sitter near you today.
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <a href="javascript:void(0);" class="btn lg bordered banner_btn">Something about</a>
+          </div>
+
+          <!-- right side -->
+          <div class="col-md-6 right">
+            <div class="form_wrapper">
+              <form action="" id="banner_form" class="banner_form">
+                <p class="title">Sign in</p>
+                <input type="text" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="sign in" class="btn lg green">
+              </form>
+              <div class="clearfix">
+                <a href="javascript:void(0);" class="restore_pass pull-left">Forgot password</a>
+                <a href="javascript:void(0);" class="new_user_account pull-right">Create new account</a>
+              </div>
+              <div class="row socials">
+                <p class="title clearfix">Or sign in with</p>
+                <div class="col-md-6">
+                  <a href="javascript:void(0);" class="btn lg fb">
+                    <i class="flaticon-facebook-letter-logo"></i>
+                    Facebook
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a href="javascript:void(0);" class="btn lg vk">
+                    <i class="flaticon-facebook-letter-logo"></i>
+                    Vkontakte
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a href="javascript:void(0);" class="btn lg gp">
+                    <i class="flaticon-facebook-letter-logo"></i>
+                    Google+
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a href="javascript:void(0);" class="btn lg tw">
+                    <i class="flaticon-facebook-letter-logo"></i>
+                    Twitter
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Discount -->
+    <div class="discount text-center">
+      <div class="container">
+        <h3>
+          Some advert Invite a friend and get 5 $ discount for the next deal !
+        </h3>
+        <a href="javascript:void(0);" class="btn lg green bordered">Something about</a>  
+      </div>
+    </div>
+
+    <!-- Feedback carousel -->
+    <div class="feedback">
+      <div class="container">
+        <h2>
+          Meet the animal lovers
+          <br> 
+          who will treat your pet like family
+        </h2>
+      </div>
+    </div>
+
+    <!-- lost&found -->
+    <div class="lostfound">
+      <div class="container">
+        <h2>Let's help to find home!</h2>
+        <div class="switcher text-center">
+          <span class="active">
+            <i></i>
+            lost
+          </span>
+          <span>
+            <i></i>
+            found
+          </span>
+        </div>
+
+        <!-- dogs list -->
+        <div class="dogs_list row">
+          <div class="col-md-6">
+            <div class="item">
+              <div class="col-xs-4">
+                <img src="./front/img/test_img.jpg" alt="logo">
+              </div>  
+              <div class="col-xs-8">
+                <p>
+                  <span>Nickname</span>
+                  Archi
+                </p>
+                <p>
+                  <span>Breed</span>
+                  American Bulldog
+                </p>
+                <p>
+                  <span>Where lost</span>
+                  Lviv, Zelena str., 122 
+                </p>  
+                <p>
+                  <span>
+                    When lost
+                  </span>
+                  15 APR 2016
+                </p>
+                <p>
+                  <span>
+                    Sex
+                  </span>  
+                  F
+                  <span>
+                    Age
+                  </span>
+                  16
+                </p>
+                <span class="show_more">
+                  More...
+                </span>
+                <a href="javascript:void(0);" class="btn sm green">contact the owner</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+           <div class="item">
+              <div class="col-xs-4">
+                <img src="./front/img/test_img.jpg" alt="logo">
+              </div>  
+              <div class="col-xs-8">
+                <p>
+                  <span>Nickname</span>
+                  Archi
+                </p>
+                <p>
+                  <span>Breed</span>
+                  American Bulldog
+                </p>
+                <p>
+                  <span>Where lost</span>
+                  Lviv, Zelena str., 122 
+                </p>  
+                <p>
+                  <span>
+                    When lost
+                  </span>
+                  15 APR 2016
+                </p>
+                <p>
+                  <span>
+                    Sex
+                  </span>  
+                  F
+                  <span>
+                    Age
+                  </span>
+                  16
+                </p>
+                <span class="show_more">
+                  More...
+                </span>
+                <a href="javascript:void(0);" class="btn sm green">contact the owner</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item">
+              <div class="col-xs-4">
+                <img src="./front/img/test_img.jpg" alt="logo">
+              </div>  
+              <div class="col-xs-8">
+                <p>
+                  <span>Nickname</span>
+                  Archi
+                </p>
+                <p>
+                  <span>Breed</span>
+                  American Bulldog
+                </p>
+                <p>
+                  <span>Where lost</span>
+                  Lviv, Zelena str., 122 
+                </p>  
+                <p>
+                  <span>
+                    When lost
+                  </span>
+                  15 APR 2016
+                </p>
+                <p>
+                  <span>
+                    Sex
+                  </span>  
+                  F
+                  <span>
+                    Age
+                  </span>
+                  16
+                </p>
+                <span class="show_more">
+                  More...
+                </span>
+                <a href="javascript:void(0);" class="btn sm green">contact the owner</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item">
+              <div class="col-xs-4">
+                <img src="./front/img/test_img.jpg" alt="logo">
+              </div>  
+              <div class="col-xs-8">
+                <p>
+                  <span>Nickname</span>
+                  Archi
+                </p>
+                <p>
+                  <span>Breed</span>
+                  American Bulldog
+                </p>
+                <p>
+                  <span>Where lost</span>
+                  Lviv, Zelena str., 122 
+                </p>  
+                <p>
+                  <span>
+                    When lost
+                  </span>
+                  15 APR 2016
+                </p>
+                <p>
+                  <span>
+                    Sex
+                  </span>  
+                  F
+                  <span>
+                    Age
+                  </span>
+                  16
+                </p>
+                <span class="show_more">
+                  More...
+                </span>
+                <a href="javascript:void(0);" class="btn sm green">contact the owner</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="clearfix text-center">
+            <a href="javascript:void(0);" class="show_more">show more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- service -->
+    <div class="service container">
+      <h2>We promise you perfect service!</h2>
+      <div class="clearfix">
+        <div class="col-sm-4">
+          <div class="title">Benefit</div>
+
+          <!-- max string height = 52px, other will be overflowed -->
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima corrupti velit totam doloremque quasi nihil aperiam provident odio placeat assumenda qui, earum, dolorem recusandae modi repellendus. Est odit, dolorum numquam.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <div class="title">Benefit</div>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <div class="title">Benefit</div>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          </p>
+        </div>
+      </div>
+      <div class="clearfix">
+        <div class="col-sm-4">
+          <div class="title">Benefit</div>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <div class="title">Benefit</div>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <div class="title">Benefit</div>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+
   </main>
 
-  <!-- footer -->
+  <!-- 
+    FOOTER
+    ======
+  -->
   <footer id="footer">
-    footer
+    <div class="container">
+      <div class="row">
+        
+        <!-- top -->
+        <div class="top clearfix">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="title">
+                  ABOUT DOGGY b&B
+                </div>
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="title">
+                  SUPPORT
+                </div>
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="title">
+                  KONTAKT
+                </div>
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 right">
+            <div class="title no_underline">
+              SUBCRIBE TO OUR NEWSLETTER
+            </div>
+            <form action="">
+              <input type="text" placeholder="Your name">
+              <input type="email" placeholder="Your e-mailadress">
+              <input type="submit" value="submit" class="btn sm bordered green">
+            </form>
+          </div>
+        </div>
+
+        <!-- bottom -->
+        <div class="bottom clearfix">
+          <div class="col-md-12">
+            <a href="javascript:void(0);" class="logo">
+              <img src="./front/img/footer_logo.png" alt="logo">
+            </a>
+            <div class="socials">
+              <a href="javascript:void(0);" class="flaticon-facebook-letter-logo"></a>
+              <a href="javascript:void(0);" class="flaticon-twitter-logo-silhouette"></a>
+              <a href="javascript:void(0);" class="flaticon-linkedin-logo"></a>
+              <a href="javascript:void(0);" class="flaticon-youtube-logo"></a>
+              <a href="javascript:void(0);" class="flaticon-google-plus-logo"></a>
+              <a href="javascript:void(0);" class="flaticon-instagram"></a>
+            </div>
+          </div>          
+          <div class="col-md-12 divider"></div>
+          <div class="col-md-12">
+            <div class="pull-left">
+              All rights reserved DOGGYBB copyright 2016
+            </div>
+            <div class="pull-right">
+              <a href="javascript:void(0);">COOKIES</a>
+              <a href="javascript:void(0);">Terms of use</a>
+              <a href="javascript:void(0);">ENGLISH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
 </body>

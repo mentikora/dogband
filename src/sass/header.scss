@@ -1,0 +1,30 @@
+#header{
+	background: $darkgreen;
+
+	> .container{
+		display: flex;
+		align-items: center;
+		height: 90px;
+	}
+
+	.logo{
+		display: block;
+		float: left;
+	}
+
+	.search{
+		i{
+			color: $white;
+		}
+	}
+
+	.user_image{
+		margin-left: 25px;
+		img{
+			display: inline-block;
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+		}
+	}
+}
