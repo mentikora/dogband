@@ -2,18 +2,104 @@
 .banner{
 	min-height: 660px;
 	background: url('/front/img/banner.jpg');
+	// background: #000;
+	
+	// .row{
+	// 	display: flex;
+	// 	align-items: center;
+	// }
+
+	.left{
+		color: $white;
+
+		p{
+			margin: 50px 0;
+			font-size: 24px;
+			line-height: 30px;
+			text-transform: uppercase;
+		}
+	}
+	.right{
+		
+	}
+}
+
+// banner form
+.form_wrapper{
+	padding: 35px 35px 20px;
+	background: $lightgrey;
+
+	.title{
+		margin-bottom: 20px;
+		font-size: 16px;
+		line-height: 30px;
+		color: #686868;
+		text-align: center;
+	}
+}
+.form_style{
+	font-size: 16px;
+	color: #a9a9a9;
+}
+.banner_form{
+	input{
+		width: 100%;
+	}
+
+	input[type="text"],
+	input[type="password"]{
+		background: $white;
+		border: 0;
+		outline: 0;
+
+		height: 49px;
+		line-height: 49px;
+		padding-left: 25px;
+		margin-bottom: 15px;
+
+		@extend .form_style;
+	}
+}
+.restore_pass,
+.new_user_account{
+
+	@extend .form_style;
+	@include transition(.25s, ease-in-out);
+
+	display: block;
+	margin: 10px 0 30px;
+	text-decoration: underline;
+
+	&:hover{
+		color: $green;
+	}
+}
+
+.socials{
+	.btn{
+		width: 100%;
+		margin-bottom: 15px;
+	}
 }
 
 // discount
 .discount{
 	background-color: $blue;
+	height: 225px;
+
+	display: flex;
+	align-items: center;
 
 	h3{
-		margin: 0;
+		margin: 0 0 30px;
 		font-size: 36px;
 		line-height: 42px;
 		font-weight: 500;
 		color: $white;
+	}
+
+	.btn{
+		width: 250px;
 	}
 }
 
