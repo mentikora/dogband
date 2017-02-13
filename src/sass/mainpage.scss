@@ -17,11 +17,23 @@ $banner_height: 660px;
 	.left{
 		color: $white;
 
+    @media(max-width: $grid_mobile){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
 		p{
 			margin: 50px 0;
 			font-size: 24px;
 			line-height: 30px;
 			text-transform: uppercase;
+
+      @media(max-width:$grid_mobile){
+        font-size: 16px;
+        line-height: 26px;
+      }
 		}
 
     @media(max-width: $grid_tablet){
@@ -34,6 +46,10 @@ $banner_height: 660px;
 	.right{
 		.socials .btn{
 			padding-left: 20px;
+
+      @media(max-width: $grid_mobile){
+        padding-left: 10px;
+      }
 		}
 
     @media(max-width: $grid_tablet){
@@ -57,12 +73,19 @@ $banner_height: 660px;
 	padding: 35px 35px 20px;
 	background: $lightgrey;
 
+  @media(max-width: $grid_tablet){
+    padding: 25px 25px 10px;
+  }
+
 	.title{
 		margin-bottom: 20px;
 		font-size: 16px;
 		line-height: 30px;
 		color: #686868;
 		text-align: center;
+    @media(max-width: $grid_tablet){
+      font-size: 14px;
+    }
 	}
 }
 .form_style{
@@ -86,6 +109,10 @@ $banner_height: 660px;
 		margin-bottom: 15px;
 
 		@extend .form_style;
+
+    @media(max-width: $grid_mobile){
+      font-size: 14px;
+    }
 	}
 }
 .restore_pass,
@@ -101,6 +128,10 @@ $banner_height: 660px;
 	&:hover{
 		color: darken($green, 10%);
 	}
+
+  @media(max-width: $grid_mobile){
+    font-size: 14px;
+  }
 }
 
 .socials{
@@ -108,6 +139,10 @@ $banner_height: 660px;
 		width: 100%;
 		margin-bottom: 15px;
 		text-align: left;
+
+    @media(max-width: $grid_mobile){
+      font-size: 14px;
+    }
 	}
 }
 
@@ -125,11 +160,21 @@ $banner_height: 660px;
 		line-height: 42px;
 		font-weight: 500;
 		color: $white;
+    @media(max-width: $grid_mobile){
+      margin: 0 0 20px;
+      font-size: 24px;
+      line-height: 32px;
+    }
 	}
 
 	.btn{
 		width: 250px;
 	}
+
+  @media(max-width: $grid_mobile){
+    height: 250px;
+  }
+
 }
 
 // feedback
@@ -168,8 +213,13 @@ $banner_height: 660px;
 				border-left-width: 12px;
 				border-right-width: 12px;
 				border-top: 17px solid rgba(255,255,255, .7);
-
 			}
+
+      @media(max-width: $grid_mobile){
+        padding: 30px;
+        font-size: 16px;
+        line-height: 22px;
+      }
 		}
 		.bottom{
 			display: flex;
@@ -183,6 +233,10 @@ $banner_height: 660px;
 			height: auto;
 			margin-right: 15px;
 			margin-left: 12px;
+
+      @media(max-width: $grid_mobile){
+        width: 62px;
+      }
 		}
 		.name,
 		.date{
@@ -193,9 +247,16 @@ $banner_height: 660px;
 		.name{
 			font-weight: 700;
 			margin-bottom: 10px;
+
+      @media(max-width: $grid_mobile){
+        font-size: 16px;
+      }
 		}
 		.date{
 			text-transform: uppercase;
+      @media(max-width: $grid_mobile){
+        font-size: 12px;
+      }
 		}
 	}
 }
@@ -248,12 +309,20 @@ $banner_height: 660px;
 				weight: 700;
 			}
 			color: #555555;
+
+      @media(max-width: $grid_mobile){
+        font-size: 14px;
+      }
 			span{
 				font:{
 					size: 14px;
 					weight: normal;
 				}
 				color: #959595;
+
+        @media(max-width: $grid_mobile){
+          font-size: 12px;
+        }
 			}
 		}
 
@@ -265,6 +334,15 @@ $banner_height: 660px;
 			margin: 0 0 10px;
 			cursor: pointer;
 		}
+
+    @media(max-width: $grid_mobile){
+      padding: 15px 0px;
+      margin-bottom: 5px;
+
+      > div{
+        padding: 0 10px;
+      }
+    }
 	}
 
 	.show_more{
@@ -280,6 +358,10 @@ $banner_height: 660px;
 			text-decoration: none;
 			color: darken($green, 10%);
 		}
+
+    @media(max-width: $grid_mobile){
+      font-size: 12px;
+    }
 	}
 }
 
@@ -354,6 +436,11 @@ $banner_height: 660px;
 		font-size: 22px;
 		line-height: 22px;
 		text-transform: uppercase;
+
+    @media(max-width: $grid_mobile){
+      font-size: 18px;
+      line-height: 28px;
+    }
 	}
 	.text{
 		font-size: 18px;
@@ -361,6 +448,13 @@ $banner_height: 660px;
 
 		max-height: 52px;
 		overflow: hidden;
+
+    @media(max-width: $grid_mobile){
+      font-size: 16px;
+      line-height: 22px;
+
+      max-height: 44px;
+    }
 	}
 	.col-sm-4{
 		background: $green;

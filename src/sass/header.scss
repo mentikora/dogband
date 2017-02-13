@@ -10,6 +10,10 @@
 	.logo{
 		display: block;
 		float: left;
+
+		@media(max-width: $grid_mobile){
+			width: 178px;
+		}
 	}
 
 	.search{

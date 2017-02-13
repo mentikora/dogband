@@ -18,6 +18,8 @@
 
 		@media(max-width: $grid_mobile){
 			border-bottom: 0;
+			padding-bottom: 0;
+			margin-bottom: 35px !important;
 		}
 
 		&.no_underline{
@@ -38,6 +40,7 @@
 		@media(max-width: $grid_mobile){
 			float: none;
 			display: inline-block;
+			margin-bottom: 25px;
 		}
 	}
 	.socials{
@@ -51,14 +54,21 @@
 			border-radius: 50%;
 			text-align: center;
 			color: $green;
+			font-size: 15px;
 
 			@include transition(.25s ease-in-out);
 
 			&:hover{
 				border-color: $green;
+				i{
+					color: $white;
+				}
 			}
 			i{
 				color: $green;
+				position: relative;
+				top: -2px;
+				@include transition(.25s ease-in-out);
 			}
 		}
 		@media(max-width: $grid_mobile){
@@ -75,6 +85,10 @@
 		height: 1px;
 
 		background: #25311e;
+
+		@media(max-width: $grid_mobile){
+			margin: 45px 0 25px;
+		}
 	}
 
 	form{
@@ -100,7 +114,7 @@
 		input[type="email"]{
 			margin: 0 10px;
 			@media(max-width: $grid_mobile){
-				margin: 10px 0;
+				margin: 20px 0 35px;
 			}
 		}
 
@@ -108,6 +122,16 @@
 			@media(min-width: $grid_desktop){
 				width: 100%;
 			}
+			@media(max-width: $grid_mobile){
+				width: 185px;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.top .col-sm-4{
+		@media(max-width: $grid_mobile){
+			margin-bottom: 60px;
 		}
 	}
 
@@ -122,8 +146,11 @@
 	
 	.copyrights{
 		float: left;
-		height: 27px;
+		min-height: 27px;
 		line-height: 27px;
+		@media(max-width: $grid_mobile){
+			margin-bottom: 40px;
+		}
 	}
 	.links{
 		float: right;
@@ -146,6 +173,7 @@
 	.links{
 		@media(max-width: $grid_mobile){
 			float: none;
+			font-size: 14px;
 		}
 	}
 }
