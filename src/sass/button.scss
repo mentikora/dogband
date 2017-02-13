@@ -14,10 +14,20 @@
 	&.lg{
 		height: 49px;
 		line-height: 49px;
+
+		@media(max-width: $grid_mobile){
+			height: 42px;
+			line-height: 42px;
+		}
 	}
 	&.sm{
 		height: 45px;
 		line-height: 45px;
+
+		@media(max-width: $grid_mobile){
+			height: 37px;
+			line-height: 37px;
+		}
 	}
 	&.bordered{
 		border-radius: 2px;
