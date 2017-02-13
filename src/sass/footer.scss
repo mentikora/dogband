@@ -16,6 +16,12 @@
 		border-bottom: 1px solid #25311e;
 		margin-bottom: 6px;
 
+		@media(max-width: $grid_mobile){
+			border-bottom: 0;
+			padding-bottom: 0;
+			margin-bottom: 35px !important;
+		}
+
 		&.no_underline{
 			padding-bottom: 0;
 			border-bottom: 0;
@@ -31,6 +37,11 @@
 	
 	.logo{
 		float: left;
+		@media(max-width: $grid_mobile){
+			float: none;
+			display: inline-block;
+			margin-bottom: 25px;
+		}
 	}
 	.socials{
 		float: right;
@@ -43,15 +54,26 @@
 			border-radius: 50%;
 			text-align: center;
 			color: $green;
+			font-size: 15px;
 
 			@include transition(.25s ease-in-out);
 
 			&:hover{
 				border-color: $green;
+				i{
+					color: $white;
+				}
 			}
 			i{
 				color: $green;
+				position: relative;
+				top: -2px;
+				@include transition(.25s ease-in-out);
 			}
+		}
+		@media(max-width: $grid_mobile){
+			float: none;
+			text-align: center;
 		}
 	}
 
@@ -63,12 +85,19 @@
 		height: 1px;
 
 		background: #25311e;
+
+		@media(max-width: $grid_mobile){
+			margin: 45px 0 25px;
+		}
 	}
 
 	form{
 		margin-top: 30px;
 		display: flex;
-		// align-items: stretch;
+
+		@media(max-width: $grid_mobile){
+			flex-direction: column;
+		}
 
 		input[type="text"],
 		input[type="email"]{
@@ -84,20 +113,67 @@
 		}
 		input[type="email"]{
 			margin: 0 10px;
+			@media(max-width: $grid_mobile){
+				margin: 20px 0 35px;
+			}
 		}
 
 		.btn{
-			width: 100%;
+			@media(min-width: $grid_desktop){
+				width: 100%;
+			}
+			@media(max-width: $grid_mobile){
+				width: 185px;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.top .col-sm-4{
+		@media(max-width: $grid_mobile){
+			margin-bottom: 60px;
 		}
 	}
 
 	.bottom{
 		margin-top: 50px;
 		text-transform: uppercase;
-	}
 
-	.links,
-	.links a{
-		color: #868686;
+		@media(max-width: $grid_mobile){
+			text-align: center;
+		}
+	}
+	
+	.copyrights{
+		float: left;
+		min-height: 27px;
+		line-height: 27px;
+		@media(max-width: $grid_mobile){
+			margin-bottom: 40px;
+		}
+	}
+	.links{
+		float: right;
+		span{
+			color: #868686;
+			@media(max-width: $grid_mobile){
+				display: block;
+				text-indent: -9999px;
+			}
+		}
+		a{
+			color: #868686;
+			@media(max-width: $grid_mobile){
+				display: inline-block;
+				clear: both;
+			}
+		}
+	}
+	.copyrights,
+	.links{
+		@media(max-width: $grid_mobile){
+			float: none;
+			font-size: 14px;
+		}
 	}
 }

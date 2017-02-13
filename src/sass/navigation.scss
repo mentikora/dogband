@@ -58,4 +58,9 @@
 			}
 		}
 	}
+	
+	@media(max-width: $grid_tablet){
+		display: none;
+	}
+
 }
