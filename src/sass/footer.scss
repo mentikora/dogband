@@ -55,8 +55,13 @@
 			text-align: center;
 			color: $green;
 			font-size: 15px;
+			margin: 0 6px;
 
 			@include transition(.25s ease-in-out);
+
+			&:last-child{
+				margin-right: 0;
+			}
 
 			&:hover{
 				border-color: $green;
@@ -87,7 +92,7 @@
 		background: #25311e;
 
 		@media(max-width: $grid_mobile){
-			margin: 45px 0 25px;
+			margin: 45px 15px 25px;
 		}
 	}
 
@@ -156,9 +161,12 @@
 		float: right;
 		span{
 			color: #868686;
+			display: inline-block;
+			margin: 0 8px;
 			@media(max-width: $grid_mobile){
 				display: block;
 				text-indent: -9999px;
+				height: 10px;
 			}
 		}
 		a{
