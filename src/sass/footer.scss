@@ -16,6 +16,10 @@
 		border-bottom: 1px solid #25311e;
 		margin-bottom: 6px;
 
+		@media(max-width: $grid_mobile){
+			border-bottom: 0;
+		}
+
 		&.no_underline{
 			padding-bottom: 0;
 			border-bottom: 0;
@@ -31,6 +35,10 @@
 	
 	.logo{
 		float: left;
+		@media(max-width: $grid_mobile){
+			float: none;
+			display: inline-block;
+		}
 	}
 	.socials{
 		float: right;
@@ -53,6 +61,10 @@
 				color: $green;
 			}
 		}
+		@media(max-width: $grid_mobile){
+			float: none;
+			text-align: center;
+		}
 	}
 
 	.divider{
@@ -68,7 +80,10 @@
 	form{
 		margin-top: 30px;
 		display: flex;
-		// align-items: stretch;
+
+		@media(max-width: $grid_mobile){
+			flex-direction: column;
+		}
 
 		input[type="text"],
 		input[type="email"]{
@@ -84,20 +99,53 @@
 		}
 		input[type="email"]{
 			margin: 0 10px;
+			@media(max-width: $grid_mobile){
+				margin: 10px 0;
+			}
 		}
 
 		.btn{
-			width: 100%;
+			@media(min-width: $grid_desktop){
+				width: 100%;
+			}
 		}
 	}
 
 	.bottom{
 		margin-top: 50px;
 		text-transform: uppercase;
-	}
 
-	.links,
-	.links a{
-		color: #868686;
+		@media(max-width: $grid_mobile){
+			text-align: center;
+		}
+	}
+	
+	.copyrights{
+		float: left;
+		height: 27px;
+		line-height: 27px;
+	}
+	.links{
+		float: right;
+		span{
+			color: #868686;
+			@media(max-width: $grid_mobile){
+				display: block;
+				text-indent: -9999px;
+			}
+		}
+		a{
+			color: #868686;
+			@media(max-width: $grid_mobile){
+				display: inline-block;
+				clear: both;
+			}
+		}
+	}
+	.copyrights,
+	.links{
+		@media(max-width: $grid_mobile){
+			float: none;
+		}
 	}
 }
