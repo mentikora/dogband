@@ -19,9 +19,9 @@
 			> a{
 				color: $green;
 			}
-			ul{
+			/* ul{
 				display: block;
-			}
+			} */
 		}
 	}
 
@@ -37,7 +37,7 @@
 
 	// popup ul
 	ul{
-		// display: none;
+		display: none;
 		position: absolute;
 		z-index: 10;
 		width: 245px;
@@ -57,10 +57,45 @@
 				background: #182810;
 			}
 		}
+
+		&.active{
+			display: block;
+		}
 	}
 	
-	@media(max-width: $grid_tablet){
-		display: none;
+	&.active{
+		display: block !important;
 	}
 
+	@media(max-width: $grid_mobile){
+		top: 70px;
+	}
+
+	@media(max-width: $grid_tablet){
+		display: none;
+		text-align: center;
+		padding: 10px 0;
+		background: $darkgreen;
+		position: absolute;
+		top: 90px;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+
+		> li{
+			float: none;
+			a{
+				line-height: 44px;
+			}
+		}
+		ul{
+			position: relative;
+			top: 0;
+	    left: 0;
+	    right: 0;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 100%;
+		}
+	}
 }

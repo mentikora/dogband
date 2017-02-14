@@ -1336,10 +1336,12 @@ body {
     margin: 0 20px; }
     #navigation > li > a {
       text-transform: uppercase; }
-    #navigation > li:hover > a {
-      color: #57c53d; }
-    #navigation > li:hover ul {
-      display: block; }
+    #navigation > li:hover {
+      /* ul{
+				display: block;
+			} */ }
+      #navigation > li:hover > a {
+        color: #57c53d; }
   #navigation a {
     display: block;
     font-weight: 300;
@@ -1347,6 +1349,7 @@ body {
     -webkit-transition: 0.25s, ease-in-out;
     transition: 0.25s, ease-in-out; }
   #navigation ul {
+    display: none;
     position: absolute;
     z-index: 10;
     width: 245px;
@@ -1360,9 +1363,36 @@ body {
       line-height: 44px; }
       #navigation ul a:hover {
         background: #182810; }
+    #navigation ul.active {
+      display: block; }
+  #navigation.active {
+    display: block !important; }
+  @media (max-width: 767px) {
+    #navigation {
+      top: 70px; } }
   @media (max-width: 991px) {
     #navigation {
-      display: none; } }
+      display: none;
+      text-align: center;
+      padding: 10px 0;
+      background: #091801;
+      position: absolute;
+      top: 90px;
+      left: 0;
+      width: 100%;
+      z-index: 100; }
+      #navigation > li {
+        float: none; }
+        #navigation > li a {
+          line-height: 44px; }
+      #navigation ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; } }
 
 .btn {
   border: 0;
@@ -1750,7 +1780,8 @@ body {
       font-size: 14px; } }
 
 .discount {
-  background-color: #295f90; }
+  background-color: #295f90;
+  overflow: hidden; }
   .discount h3 {
     margin: 0 0 30px;
     font-size: 36px;
