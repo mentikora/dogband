@@ -164,6 +164,7 @@ $banner_height: 660px;
 // discount
 .discount{
 	background-color: $blue;
+	overflow: hidden;
 
 	h3{
 		margin: 0 0 30px;

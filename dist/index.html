@@ -28,7 +28,7 @@
       <nav>
         <ul id="navigation">
           <li>
-            <a href="javascript:void(0);">something1</a>
+            <a href="javascript:void(0);" class="dropdown">something1</a>
             <ul>
               <li><a href="javascript:void(0);">Lorem ipsum</a></li>
               <li><a href="javascript:void(0);">Lorem ipsum</a></li>
@@ -41,11 +41,11 @@
         </ul>
       </nav>
 
-      <div class="search visible-lg">
+      <div class="search visible-md visible-lg">
         <i class="flaticon-search"></i>
       </div>
 
-      <div class="user_image visible-lg">
+      <div class="user_image visible-md visible-lg">
         <img src="./front/img/test_img.jpg" alt="user image">
       </div>
 
@@ -588,12 +588,21 @@
         ]
       });
 
-      let mobileMenuBtn = document.querySelector('.mobile_menu_btn');
-      mobileMenuBtn.addEventListener('click', 
-        function(){
-          this.classList.toggle("active");
-        }, 
-        false);
+      const mobileMenuBtn = $(".mobile_menu_btn");
+      const nav = $("#navigation");
+      mobileMenuBtn.on("click", function(){
+        $(this).toggleClass("active");
+        nav.toggleClass("active");
+      });
+
+      const navLink = $(".dropdown");
+      navLink.on("click", function(e){
+        e.preventDefault();
+        $(this).siblings("ul").toggleClass("active");
+      });
+
+
+
     });
   </script>
 
