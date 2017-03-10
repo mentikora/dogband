@@ -1975,9 +1975,15 @@ body {
     @media (max-width: 767px) {
       .lostfound .item {
         padding: 15px 0px;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
         .lostfound .item > div {
-          padding: 0 10px; } }
+          padding: 0 10px; }
+        .lostfound .item .col-xs-12 {
+          text-align: center; } }
   .lostfound .show_more {
     display: inline-block;
     margin: 15px 0 45px;

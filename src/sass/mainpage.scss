@@ -408,9 +408,14 @@ $banner_height: 660px;
     @media(max-width: $grid_mobile){
       padding: 15px 0px;
       margin-bottom: 5px;
+      flex-direction: column;
 
       > div{
         padding: 0 10px;
+      }
+
+      .col-xs-12{
+        text-align: center;
       }
     }
 	}
