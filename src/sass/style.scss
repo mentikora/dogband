@@ -1,15 +1,16 @@
-@import "normalize.scss";
-@import "variables.scss";
-@import "mixin.scss";
-@import "grid.scss";
-@import "fonts.scss";
+@import "common/normalize.scss";
+@import "common/variables.scss";
+@import "common/mixin.scss";
+@import "common/grid.scss";
+@import "common/fonts.scss";
 
-@import "theme-default.scss";
+@import "layout/theme-default.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
 
-@import "navigation.scss";
-@import "button.scss";
-@import "header.scss";
-@import "footer.scss";
-@import "mainpage.scss";
-@import "slick.scss";
+@import "components/navigation.scss";
+@import "components/button.scss";
+@import "pages/mainpage.scss";
+
+@import "includes/slick.scss";
 

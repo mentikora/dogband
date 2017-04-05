@@ -68,13 +68,13 @@
 /* 0 */
 /***/ function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Cannot find module 'autoprefixer'\n    at Function.Module._resolveFilename (module.js:325:15)\n    at Function.Module._load (module.js:276:25)\n    at Module.require (module.js:353:17)\n    at require (internal/module.js:12:17)\n    at Object.<anonymous> (C:\\Shared\\dogband\\postcss.config.js:3:5)\n    at Module._compile (module.js:409:26)\n    at requireFromString (C:\\Shared\\dogband\\node_modules\\postcss-loader\\node_modules\\postcss-load-config\\node_modules\\cosmiconfig\\node_modules\\require-from-string\\index.js:27:4)\n    at C:\\Shared\\dogband\\node_modules\\postcss-loader\\node_modules\\postcss-load-config\\node_modules\\cosmiconfig\\lib\\loadJs.js:11:15\n    at C:\\Shared\\dogband\\node_modules\\webpack\\lib\\NormalModule.js:143:35\n    at C:\\Shared\\dogband\\node_modules\\webpack\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\Shared\\dogband\\node_modules\\webpack\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\Shared\\dogband\\node_modules\\webpack\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at C:\\Shared\\dogband\\node_modules\\postcss-loader\\index.js:153:13");
 
 /***/ },
 /* 1 */
 /***/ function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: Error: Cannot find module 'autoprefixer'\n    at Function.Module._resolveFilename (module.js:325:15)\n    at Function.Module._load (module.js:276:25)\n    at Module.require (module.js:353:17)\n    at require (internal/module.js:12:17)\n    at Object.<anonymous> (C:\\Shared\\dogband\\postcss.config.js:3:5)\n    at Module._compile (module.js:409:26)\n    at requireFromString (C:\\Shared\\dogband\\node_modules\\postcss-loader\\node_modules\\postcss-load-config\\node_modules\\cosmiconfig\\node_modules\\require-from-string\\index.js:27:4)\n    at C:\\Shared\\dogband\\node_modules\\postcss-loader\\node_modules\\postcss-load-config\\node_modules\\cosmiconfig\\lib\\loadJs.js:11:15\n    at C:\\Shared\\dogband\\node_modules\\webpack\\lib\\NormalModule.js:143:35\n    at C:\\Shared\\dogband\\node_modules\\webpack\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\Shared\\dogband\\node_modules\\webpack\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\Shared\\dogband\\node_modules\\webpack\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at C:\\Shared\\dogband\\node_modules\\postcss-loader\\index.js:153:13");
 
 /***/ },
 /* 2 */
