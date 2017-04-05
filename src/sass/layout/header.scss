@@ -5,11 +5,19 @@
 		display: flex;
 		align-items: center;
 		height: 90px;
+
+		@media(max-width: $grid_mobile){
+			height: 70px;
+		}
 	}
 
 	.logo{
 		display: block;
 		float: left;
+
+		@media(max-width: $grid_mobile){
+			width: 178px;
+		}
 	}
 
 	.search{
@@ -50,6 +58,10 @@
     visibility: visible;
 
     @include transition(.25s, ease-in-out);
+
+    &:last-child{
+    	margin-bottom: 0;
+    }
   }
 
   &.active{
