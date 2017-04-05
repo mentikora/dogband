@@ -51,9 +51,30 @@ body{
 #wrapper{
   flex: 1 0 auto; 
   width: 100%;
+
+  &.inner{
+    background-color: #edefef;
+  }
 }
 
 /* slick */ 
 .slick-slide:focus{
   outline: 0;
 }
+
+/* page content */
+.page-content{
+  &__white{
+    background-color: $white;
+  }
+}
+
+/* side-text */
+.side-text{
+  color: #555555;
+  line-height: 36px;
+  font: {
+    size: 14px;
+    family: Helvetica, sans-serif;
+  }
+} 
