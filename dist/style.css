@@ -1,4 +1,4 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+.is_clickable{cursor:hand;cursor:pointer}.nstSlider{cursor:hand;cursor:pointer;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;position:relative;width:300px;height:20px;background:#134}.nstSlider .leftGrip.gripHighlighted,.nstSlider .rightGrip.gripHighlighted{background:#134}.nstSlider .leftGrip,.nstSlider .rightGrip{position:absolute;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;width:20px;height:20px;background:#fff}.nstSlider .bar{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;position:absolute;background:#fff;height:8px;top:6px}.nstSlider .highlightPanel{-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;-ms-transition:all 500ms ease-in-out;-o-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;position:absolute;background:#e87722;height:20px;top:0}/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
@@ -1323,10 +1323,6 @@ body {
   #wrapper.inner {
     background-color: #edefef; }
 
-/* slick */
-.slick-slide:focus {
-  outline: 0; }
-
 /* page content */
 .page-content__white {
   background-color: #ffffff; }
@@ -2066,6 +2062,43 @@ body {
   .service .clearfix:nth-child(odd) .col-sm-4:nth-child(even), .service #footer .divider:nth-child(odd) .col-sm-4:nth-child(even), #footer .service .divider:nth-child(odd) .col-sm-4:nth-child(even), .service .lostfound .item:nth-child(odd) .col-sm-4:nth-child(even), .lostfound .service .item:nth-child(odd) .col-sm-4:nth-child(even) {
     background: #48b030; }
 
+.lostfound .item {
+  padding: 35px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff; }
+  .lostfound .item img {
+    border-radius: 50%;
+    display: inline-block;
+    max-width: 100%;
+    height: auto; }
+  .lostfound .item p {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555555; }
+    @media (max-width: 767px) {
+      .lostfound .item p {
+        font-size: 14px; } }
+    .lostfound .item p span {
+      font-size: 14px;
+      font-weight: normal;
+      color: #959595; }
+      @media (max-width: 767px) {
+        .lostfound .item p span {
+          font-size: 12px; } }
+  @media (max-width: 767px) {
+    .lostfound .item {
+      padding: 15px 0px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -2135,42 +2168,9 @@ body {
 .slick-arrow.slick-hidden {
   display: none; }
 
-.lostfound .item {
-  padding: 35px 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #ffffff; }
-  .lostfound .item img {
-    border-radius: 50%;
-    display: inline-block;
-    max-width: 100%;
-    height: auto; }
-  .lostfound .item p {
-    line-height: 24px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #555555; }
-    @media (max-width: 767px) {
-      .lostfound .item p {
-        font-size: 14px; } }
-    .lostfound .item p span {
-      font-size: 14px;
-      font-weight: normal;
-      color: #959595; }
-      @media (max-width: 767px) {
-        .lostfound .item p span {
-          font-size: 12px; } }
-  @media (max-width: 767px) {
-    .lostfound .item {
-      padding: 15px 0px;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
+/* slick */
+.slick-slide:focus {
+  outline: 0; }
 @font-face {
   font-family: "Flaticon";
   src: url("/front/fonts/Flaticon.eot");
