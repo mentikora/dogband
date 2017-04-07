@@ -1325,7 +1325,8 @@ body {
 
 /* page content */
 .page-content__white {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding: 30px; }
 
 /* side-text */
 .side-text {
@@ -1651,6 +1652,65 @@ body {
     background: #cf4332; }
   .btn.tw {
     background: #33ccff; }
+  .btn__filter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+.filter-range {
+  border: 2px solid #edf0f0;
+  /* range slider */ }
+  .filter-range__header {
+    background: #edf0f0; }
+  .filter-range .form-style {
+    padding: 25px; }
+  .filter-range .nstSlider {
+    width: 100%;
+    height: 9px; }
+    .filter-range .nstSlider .leftGrip,
+    .filter-range .nstSlider .rightGrip {
+      width: 9px;
+      height: 9px; }
+    .filter-range .nstSlider .leftLabel {
+      position: absolute;
+      top: -20px;
+      left: 0; }
+
+.form-style .form-controller__fakebox, .form-style .form-controller__fakedius {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #edf0f0;
+  border-radius: 5px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  position: relative; }
+
+.form-style .form-controller {
+  position: relative;
+  /* fake input[type='checkbox'] */
+  /* fake input[type='radio']*/
+  /* label style */ }
+  .form-style .form-controller input[type="checkbox"],
+  .form-style .form-controller input[type="radio"] {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden; }
+  .form-style .form-controller input[type="checkbox"]:checked ~ .form-controller__fakebox:before {
+    content: '.';
+    position: absolute;
+    top: -6px;
+    left: 3px;
+    color: green; }
+  .form-style .form-controller__fakedius {
+    border-radius: 50%; }
+  .form-style .form-controller input[type="radio"]:checked ~ .form-controller__fakedius:before {
+    content: '.';
+    position: absolute;
+    top: -6px;
+    left: 3px;
+    color: red; }
 
 .banner,
 .banner > .container,
