@@ -49,15 +49,17 @@
 
 							<form action="" class="form-style">
 
-								<div class="clearfix">
-									<div class="nstSlider" data-range_min="0" data-range_max="28" data-cur_min="15">
+								<div class="slider-range_wrapper">
+									<div class="nstSlider" data-range_min="0" data-range_max="28" data-cur_min="0">
+										<div class="bar"></div>
 										<div class="leftGrip">
 											<div class="leftLabel" /></div>
 										</div>
 									</div>
 								</div>
-								<div class="clearfix">
-									<div class="nstSlider" data-range_min="0" data-range_max="28" data-cur_min="15">
+								<div class="slider-range_wrapper">
+									<div class="nstSlider" data-range_min="0" data-range_max="28" data-cur_min="0">
+										<div class="bar"></div>
 										<div class="leftGrip">
 											<div class="leftLabel" /></div>
 										</div>
@@ -92,13 +94,14 @@
 	</div>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="/front/js/jquery.nstSlider.min.js"></script>
+	<script src="/front/js/jquery.nstSlider.js"></script>
 
 	<script>
 
 	$('document').ready(function(){
 		$('.nstSlider').nstSlider({
 		    "left_grip_selector": ".leftGrip",
+		    "value_bar_selector": ".bar",
 		    "value_changed_callback": function(cause, leftValue, rightValue) {
 	        $(this).parent().find('.leftLabel').text(leftValue);
 		    }

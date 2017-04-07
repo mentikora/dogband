@@ -1,4 +1,58 @@
-.is_clickable{cursor:hand;cursor:pointer}.nstSlider{cursor:hand;cursor:pointer;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;position:relative;width:300px;height:20px;background:#134}.nstSlider .leftGrip.gripHighlighted,.nstSlider .rightGrip.gripHighlighted{background:#134}.nstSlider .leftGrip,.nstSlider .rightGrip{position:absolute;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;width:20px;height:20px;background:#fff}.nstSlider .bar{-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;position:absolute;background:#fff;height:8px;top:6px}.nstSlider .highlightPanel{-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;-ms-transition:all 500ms ease-in-out;-o-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;position:absolute;background:#e87722;height:20px;top:0}/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+.is_clickable {
+  cursor: hand;
+  cursor: pointer;
+}
+.nstSlider {
+  cursor: hand;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  width: 300px;
+  height: 20px;
+  background: #113344;
+}
+.nstSlider .leftGrip.gripHighlighted {
+  background: #113344;
+}
+.nstSlider .rightGrip.gripHighlighted {
+  background: #113344;
+}
+.nstSlider .rightGrip,
+.nstSlider .leftGrip {
+  position: absolute;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+}
+.nstSlider .bar {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background: #ffffff;
+  height: 8px;
+  top: 6px;
+}
+.nstSlider .highlightPanel {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background: #e87722;
+  height: 20px;
+  top: 0;
+}
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
@@ -1664,17 +1718,36 @@ body {
     background: #edf0f0; }
   .filter-range .form-style {
     padding: 25px; }
+  .filter-range .slider-range_wrapper {
+    margin-bottom: 70px; }
   .filter-range .nstSlider {
     width: 100%;
-    height: 9px; }
+    height: 9px;
+    background: #f7f7f7; }
     .filter-range .nstSlider .leftGrip,
     .filter-range .nstSlider .rightGrip {
-      width: 9px;
-      height: 9px; }
+      outline: 0;
+      top: -3px;
+      width: 15px;
+      height: 15px;
+      background: #398228; }
     .filter-range .nstSlider .leftLabel {
+      width: 35px;
       position: absolute;
-      top: -20px;
-      left: 0; }
+      top: -30px;
+      left: 0;
+      z-index: 2;
+      text-align: center;
+      height: 25px;
+      line-height: 25px;
+      border: 1px solid #ebebeb;
+      background: #f7f7f7;
+      font-size: 12px;
+      color: #282828; }
+    .filter-range .nstSlider .bar {
+      background: #398228;
+      top: 0;
+      height: 9px; }
 
 .form-style .form-controller__fakebox, .form-style .form-controller__fakedius {
   display: inline-block;
