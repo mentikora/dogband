@@ -1,17 +1,39 @@
 .filter-range{
   border: 2px solid $lightgrey;
+
   &__header{
     background: $lightgrey;
-    padding: 10px;
+    padding: 23px 25px;
+    
+    color: #525252;
+    text-transform: uppercase;
+    line-height: 18px;
+    font: {
+      size: 18px;
+      family: $roboto;
+    }
   }
 
   .form-style{
-    padding: 25px;
+    padding: 40px 25px 25px;
+  }
+  .form-controller-inputs-wrapper,
+  .form-controller-radios-wrapper{
+    margin: 25px 0;
+  }
+  .form-controller-inputs-wrapper{
+    
+  }
+  .form-controller-radios-wrapper{
+
   }
 
   /* range slider */ 
   .slider-range_wrapper{
-    margin-bottom: 70px;
+    margin-top: 70px;
+    &:first-child{
+      margin-top: 0px;
+    }
   }
   .nstSlider{
     width: 100%;
@@ -29,7 +51,7 @@
       width: 35px;
       position: absolute;
       top: -30px;
-      left: 0;
+      left: -8px;
       z-index: 2;
       
       text-align: center;
@@ -45,6 +67,12 @@
       top: 0;
       height: 9px
     }
+  }
+
+  .btn{
+    margin-top: 40px;
+    width: 100%;
+    background-color: $filter-color-darkgreen;
   }
 
 }
