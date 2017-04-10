@@ -1,8 +1,4 @@
 .lostfound_dogs_list{
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
   .item{
     @extend .puppy-item;
     @extend .item_dog_list;
@@ -14,6 +10,7 @@
   .show-more-link{}
 }
 #map{
+  margin-bottom: 25px;
 
   /* for test */ 
   img{
