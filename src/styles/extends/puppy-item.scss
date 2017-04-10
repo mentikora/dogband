@@ -1,4 +1,4 @@
-%puppy-item{
+.puppy-item{
 	
 	@extend .clearfix;
 
@@ -11,10 +11,12 @@
 	}
 
 	img{
-		border-radius: 50%;
 		display: inline-block;
 		max-width: 100%;
 		height: auto;
+		&.round{
+			border-radius: 50%;
+		}
 	}
 
 	p{

@@ -355,7 +355,7 @@ $banner_height: 660px;
 
 	.item{
 
-		@extend %puppy-item;
+		@extend .puppy-item;
 
 		border-top: 1px solid #ebebeb;
 		border-bottom: 1px solid #ebebeb;
