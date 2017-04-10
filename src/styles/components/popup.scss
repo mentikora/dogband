@@ -29,6 +29,11 @@
     @extend .item_dog_list;
   }
 
+  .popup_close{
+    display: block;
+    float: right;
+  }
+
   @media(max-width: $grid_tablet){
     > .container{
       width: 100%;
