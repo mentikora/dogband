@@ -1,0 +1,19 @@
+.show-more-link{
+  display: inline-block;
+
+  text-decoration: underline;
+  color: $green;
+  font-size: 14px;
+
+  @include transition(.25s, ease-in-out);
+
+  &:hover{
+    text-decoration: none;
+    color: darken($green, 10%);
+  }
+
+  @media(max-width: $grid_mobile){
+    font-size: 12px;
+    margin: 15px 0 30px;
+  }
+}

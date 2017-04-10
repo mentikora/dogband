@@ -1,0 +1,43 @@
+/* 
+  
+  Extend for puppy-item
+  on lost-found and home-filter pages
+
+*/
+.item_dog_list{
+  align-items: flex-start !important;
+  .detailed_text{
+    font:{
+      size: 14px;
+      family: $roboto;
+    }
+    margin: 15px 0;
+    line-height: 20px;
+    color: #959595;
+
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+
+    @include transition(all .25s ease-in-out);
+
+    &.visible{
+      visibility: visible;
+      opacity: 1;
+      max-height: 300px;
+    }
+  }
+
+  .filter-buttons-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    
+    .btn{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .detailed{
+      margin-left: 6px;
+    }
+  }
+}

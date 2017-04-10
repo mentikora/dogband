@@ -8,6 +8,7 @@
 @import "layout/header.scss";
 @import "layout/footer.scss";
 
+@import "components/switcher.scss";
 @import "components/navigation.scss";
 @import "components/button.scss";
 @import "components/filter-range.scss";
@@ -15,8 +16,11 @@
 
 @import "pages/mainpage.scss";
 @import "pages/filter-page.scss";
+@import "pages/lost-found.scss";
 
 @import "extends/puppy-item.scss";
+@import "extends/item-dog-list.scss";
+@import "extends/show-more-link.scss";
 
 @import "includes/slick.scss";
 @import "includes/jquery.nstSlider.css";
