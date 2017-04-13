@@ -9,7 +9,7 @@
 
 	font-size: 16px;
 	
-	@include transition(.25s, ease-in-out);
+	@include transition(all, .25s, ease-in-out);
 
 	&.lg{
 		height: 49px;
@@ -29,6 +29,11 @@
 			line-height: 37px;
 		}
 	}
+	&.xs{
+		height: 32px;
+		line-height: 32px;
+	}
+	
 	&.bordered{
 		border-radius: 2px;
 	}
@@ -36,6 +41,20 @@
 		background: $green;
 		&:hover{
 			background: darken($green, 10%);
+		}
+	}
+	&.semigreen{
+		background: $filter-color-darkgreen;
+		&:hover{
+			background: darken($filter-color-darkgreen, 10%);	
+		}
+	}
+	&.filter-border{
+		color: #555555;
+		border: 2px solid $filter-color-darkgreen;
+		&:hover{
+			background-color: $filter-color-darkgreen;
+			color: $white;
 		}
 	}
 	&.banner_btn{
@@ -46,6 +65,12 @@
 			background: darken($green, 10%);
 			border-color: darken($green, 10%); 
 		}
+	}
+
+	&.add-pet-button{
+		padding-left: 10px;
+		padding-right: 10px;
+		float: right;
 	}
 
 	// socials

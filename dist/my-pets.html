@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Dogband</title>
+  <script type="text/javascript" src="bundle.js"></script>
+</head>
+<body>
+  
+  <!-- header -->
+  <!--  -->
+
+  <!-- Popup -->
+  <div id="popup">
+    <div class="container">
+      <div class="col-xs-12 col-xs-offset-0 col-sm-offset-2 col-sm-8">
+
+        <div class="popup-content">
+          
+          <div class="popup-content__header">
+            <div class="popup-content__header__title">
+              New pet
+            </div>
+            <div class="popup-content__header__close">
+              X
+            </div>
+          </div>
+
+          <form class="add-pet-form row">
+            
+            <div class="col-sm-3">
+              <div class="upload-image-wrapper">
+                <input type="file" id="drop_zone" class="upload-image-wrapper__input" accept=".jpg,.png,.gif" onchange="handleFileSelect(this) " />
+                <div class="upload-image-wrapper__zone">
+                  <div>
+                  <p class="ok">Drag an image here</p>
+                  <p class="small">or if you prefer</p>
+                  <p class="green">Choose an image <br> to upload</p>
+                  </div>
+                </div>
+             </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="fieldset">
+                <label for="">Nickname</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="fieldset">
+                <label for="">Breed</label>
+                <input type="text" placeholder="">
+              </div>
+              <div class="fieldset">
+                <label for="" class="small-label">Sex</label>
+                <select>
+                  <option value="">M</option>
+                  <option value="">F</option>
+                </select>
+                <label for="" class="small-label">Age</label>
+                <input type="number" min="0" max="25" value="1">
+                <span>years</span>
+              </div>
+              <div class="add-pet-form__btn-wrapper">
+                <a href="javascript:void(0)" class="btn xs filter-border">cancel</a>
+                <input type="submit" class="btn xs semigreen" value="save">
+              </div>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="wrapper" class="inner">
+  
+    <!-- My-pets page -->
+    <div class="container">
+      
+      <div class="col-sm-2">
+        <div class="side-text">
+          Lorem ipsum <br>
+          Dolor sit amet <br>
+          Adipisicing elit <br>
+          Sed do eiusmod Tempor Incididunt ut Dolore magna aliqua.
+          Ut enim ad minim veniam, Quis nostrud 
+          Exercitation ullamco laboris nisi ut 
+        </div>
+      </div>
+      
+      <div class="col-sm-8 page-content__white">
+        <h3>My pets</h3>
+
+        <div class="row">
+
+          <!-- SIDE -->
+          <div class="col-sm-12">
+            <div class="mypets_dogs_list row">
+
+              <div class="item">
+                <div class="col-xs-5 col-sm-4">
+                  <img src="/images/test_img.jpg" alt="logo">
+                </div>  
+                <div class="col-xs-12 col-sm-8">
+                  <p>
+                    <span>Nickname</span>
+                    Archi
+                  </p>
+                  <p>
+                    <span>Breed</span>
+                    American Bulldog
+                  </p>
+                  <p>
+                    <span>Where lost</span>
+                    Lviv, Zelena str., 122 
+                  </p>  
+                  <p>
+                    <span>
+                      When lost
+                    </span>
+                    15 APR 2016
+                  </p>
+                  <p>
+                    <span>
+                      Sex
+                    </span>  
+                    F
+                    <span>
+                      Age
+                    </span>
+                    16
+                  </p>
+                </div>
+              </div>
+
+              <div class="add-pet-wrapper">
+                <a href="javascript:void(0)" class="btn semigreen xs add-pet-button">add new pet</a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- side-list -->
+      <div class="col-sm-2">
+        <ul class="side-list">
+          <li>
+            <a href="javascript:void(0);">
+              <img src="/images/test_img.jpg" alt="">
+              User1
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <img src="/images/test_img.jpg" alt="">
+              User2
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">
+              <img src="/images/test_img.jpg" alt="">
+              User3
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

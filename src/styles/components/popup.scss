@@ -1,0 +1,55 @@
+#popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(0,0,0, .3);
+
+  .popup-content{
+    background: $white;
+    padding: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    @media(max-width: $grid_tablet){
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .item{
+    @extend .puppy-item;
+    @extend .item_dog_list;
+  }
+  
+  .popup-content__header{
+    margin-bottom: 15px;
+    @extend .clearfix;
+
+    &__title{
+      float: left;
+      font:{
+        size: 22px;
+        family: $roboto;
+      }
+      color: #063134;
+    }
+    &__close{
+      float: right;
+      color: #999999;
+    }
+  }
+
+  @media(max-width: $grid_tablet){
+    > .container{
+      width: 100%;
+    }
+  }
+}

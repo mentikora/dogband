@@ -96,3 +96,8 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/* slick */ 
+.slick-slide:focus{
+  outline: 0;
+}

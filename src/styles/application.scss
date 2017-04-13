@@ -1,0 +1,34 @@
+@import "common/normalize.scss";
+@import "common/variables.scss";
+@import "common/mixin.scss";
+@import "common/grid.scss";
+@import "common/fonts.scss";
+
+@import "layout/theme-default.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+
+@import "components/switcher.scss";
+@import "components/navigation.scss";
+@import "components/button.scss";
+@import "components/filter-range.scss";
+@import "components/fake-form.scss";
+@import "components/add-pet-form.scss";
+@import "components/popup.scss";
+@import "components/my-pets-list.scss";
+@import "components/user-post.scss";
+
+@import "pages/mainpage.scss";
+@import "pages/filter-page.scss";
+@import "pages/lost-found.scss";
+@import "pages/my-pets.scss";
+
+@import "extends/puppy-item.scss";
+@import "extends/item-dog-list.scss";
+@import "extends/show-more-link.scss";
+@import "extends/side-list.scss";
+
+@import "includes/slick.scss";
+@import "includes/jquery.nstSlider.css";
+
+

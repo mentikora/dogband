@@ -1,0 +1,6 @@
+.filtered_dogs_list{
+	.item{
+		@extend .puppy-item;
+		@extend .item_dog_list;
+	}
+}

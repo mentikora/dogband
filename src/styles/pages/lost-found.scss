@@ -1,0 +1,20 @@
+.lostfound_dogs_list{
+  .item{
+    @extend .puppy-item;
+    @extend .item_dog_list;
+    width: 48%;
+    border: 1px solid #ebebeb;
+    margin-bottom: 25px;
+  }
+
+  .show-more-link{}
+}
+#map{
+  margin-bottom: 25px;
+
+  /* for test */ 
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}

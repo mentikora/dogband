@@ -1,0 +1,51 @@
+.puppy-item{
+	
+	@extend .clearfix;
+
+	padding: 35px 15px;
+	display: flex;
+	align-items: center;
+
+	background: {
+		color: $white;
+	}
+
+	img{
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+		&.round{
+			border-radius: 50%;
+		}
+	}
+
+	p{
+		line-height: 24px;
+		font:{
+			size: 16px;
+			weight: 700;
+		}
+		color: #555555;
+
+    @media(max-width: $grid_mobile){
+      font-size: 14px;
+    }
+		span{
+			font:{
+				size: 14px;
+				weight: normal;
+			}
+			color: #959595;
+
+      @media(max-width: $grid_mobile){
+        font-size: 12px;
+      }
+		}
+	}
+
+	@media(max-width: $grid_mobile){
+		padding: 15px 0px;
+		flex-direction: column;
+	}
+
+}
