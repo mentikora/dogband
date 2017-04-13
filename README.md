@@ -2,11 +2,11 @@
 
 ## Test pages
 
-[Mainpage](https://mentikora.github.io/dogband/dist/index.html)
-[Filter](https://mentikora.github.io/dogband/dist/home-filter.html)
-[Lost-found](https://mentikora.github.io/dogband/dist/lost-found.html)
-[My-pets](https://mentikora.github.io/dogband/dist/my-pets.html)
-[User-page](https://mentikora.github.io/dogband/dist/user-page.html)
+* 1.[Mainpage](https://mentikora.github.io/dogband/dist/index.html)
+* 2.[Filter](https://mentikora.github.io/dogband/dist/home-filter.html)
+* 3.[Lost-found](https://mentikora.github.io/dogband/dist/lost-found.html)
+* 4.[My-pets](https://mentikora.github.io/dogband/dist/my-pets.html)
+* 5.[User-page](https://mentikora.github.io/dogband/dist/user-page.html)
 
 ## Installation
 ```
