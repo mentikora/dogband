@@ -5,14 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>Dogband</title>
-  <script type="text/javascript" src="dist/bundle.js"></script>
+  <script type="text/javascript" src="bundle.js"></script>
   <link href="styles/bundle.css" rel="stylesheet"></head>
 </head>
 <body>
 
-  <header class="user-header">
-    user header
+  <header id="header" class="user-header">
+    <div class="container">
+      <a href="javascript:void(0);" class="logo">
+        <img src="./images/logo.png" alt="logo" class="img-responsive">
+      </a>
+
+      <!-- header nav -->
+      <nav>
+        <ul id="navigation">
+          <li><a href="javascript:void(0);">my pets</a></li>
+          <li><a href="javascript:void(0);">lost & found</a></li>
+          <li><a href="javascript:void(0);">host</a></li>
+          <li><a href="javascript:void(0);">mail</a></li>
+        </ul>
+      </nav>
+
+      <div class="search visible-md visible-lg">
+        <i class="flaticon-search"></i>
+      </div>
+
+      <div class="user_image visible-md visible-lg">
+        <img src="./images/test_img.jpg" alt="user image">
+      </div>
+
+      <div class="mobile_menu_btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
   </header>
+
+
   <div id="wrapper" class="inner">
     contetn
   </div>

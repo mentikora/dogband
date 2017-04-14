@@ -35,6 +35,10 @@
 			border-radius: 50%;
 		}
 	}
+
+	&.user-header{
+		background: $filter-color-darkgreen;
+	}
 }
 
 .mobile_menu_btn{
