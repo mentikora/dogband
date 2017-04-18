@@ -37,7 +37,12 @@ module.exports = (options) => {
         query: {
           presets: ['es2015']
         }
-      }]
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'url-loader?limit=1000&name=fonts/[name].[ext]'
+      }
+      ]
     }
   };
 
